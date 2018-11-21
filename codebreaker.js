@@ -1,4 +1,4 @@
-var realNumber = "8752";
+var realNumber = "5612";
 
 //Función que valida si un digito esta repetido
 function Repeat(N) {
