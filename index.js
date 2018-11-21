@@ -34,11 +34,16 @@ buttonGuess.addEventListener("click", function () {
         duration: 1000
       }
     });
+    $( "#dialog" ).dialog( "option", "width", 500 );
  
     if(rta == 'XXXX') {
-      $("#dialog").dialog( "open" );
-      $("#dialog").parent().css("width","500px");
+      $("#dialog").dialog( "open" );      
     };
-  } );
+    
+  });
+
+  // if ($("#dialog").parent().length > 0 ) {
+  //   $("#dialog").parent().css("width","500px");
+  //   }
 });
 
