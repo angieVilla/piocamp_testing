@@ -6,25 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  </span>
   <title>Codebreaker</title>
 </head>
 
 <body>
-  <h1>Codebreaker</h1>
-  <label for="number">Numero: </label>
+  <h1>Codebreaker</h1><p class="author">by Angelica Villamil</p>
+  <label for="number">Número: </label>
   <input id="number" type="text">
   <button id="guess">Adivinar</button>
   <br/>
   <br/>
-  <table id="list">
+  <table id="list" class="blueTable">
     <tr>
       <th>Number</th>
-      <th>Result</th>
+      <th>Result (O => Picas, X => Fijas)</th>
     </tr>
   </table>
 
+  <!-- <div id="dialog" title="Basic dialog">
+    <p>Image:</p>
+    <img src="http://placehold.it/50x50" alt="Placeholder Image" />  
+  </div> -->
+
+  <div id="dialog" title="You are a WINNER" hidden>
+    <p>GANASTE!!!!:</p>
+    <img src="https://media.giphy.com/media/3ohzAaW9uhCO4HNZVm/giphy.gif" alt="Placeholder Image" /> 
+  </div>
+
   <script src="codebreaker.js"></script>
-  <script src="index.js"></script>
+  <script src="index.js"></script> 
 </body>
 
 </html>
